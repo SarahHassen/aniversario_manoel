@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário do meu amor - Manoel</title>
+    <link rel="shortcut icon" href="imagens/faniversario.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+        
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Manoel's Day</a>
+                <div class="nav-toggle">&#9776;</div>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#photos">Memórias</a></li>
+                    <li><a href="#messages">Mensagem</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Feliz Aniversário, Manoel!</h1>
+                <div class="cake">🎂</div>
+                <p>Celebrando uma vida cheia de momentos especiais</p>
+                <div class="icon-container">
+                    <i class="fas fa-heart icon icon-heart"></i>
+                    <i class="fas fa-star icon icon-star"></i>
+                    <i class="fas fa-gift icon icon-gift"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="photos">
+            <div class="container">
+                <h2>Memórias Preciosas</h2>
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXNnZXY4ZDJqbm9rbmJsc3htdnBpOXhwZW02ZjE1bmhlNWExNXV0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/enrq327a3sMIJAS5jA/giphy.webp" alt="Câmera fotográfica animada" class="section-gif">
+                <div class="photos">
+                    <div class="photo"><img src="imagens/01.jpg" alt="Momento 1"></div>
+                    <div class="photo"><img src="imagens/02.jpg" alt="Momento 2"></div>
+                    <div class="photo"><img src="imagens/03.jpg" alt="Momento 3"></div>
+                    <div class="photo"><img src="imagens/04.jpg" alt="Momento 4"></div>
+                    <div class="photo"><img src="imagens/05.jpg" alt="Momento 5"></div>
+                    <div class="photo"><img src="imagens/06.jpg" alt="Momento 6"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="messages">
+            <div class="container">
+                <h2>Palavras do Coração</h2>
+                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2U2NnJleHd5ZnFsaWF3cXVxamdvejQxYXNka2M3ZTFvOG9raXBnZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VIKa3CjZDCoymNcBY5/giphy.webp" alt="Envelope animado" class="section-gif">
+                <div class="letter">
+                    <div class="date">30 de Novembro de 2024</div>
+                    <h3>Meu querido Manoel,</h3>
+                    
+                    <p>Vou contar um pouco da minha história de amor. Uma história que começou quando conheci você, minha pessoa especial, a pessoa que escolhi para passar o resto da minha vida.</p>
+                    
+                    <p>Tudo começou quando fui a um encontro e tive que empurrar um carro (hahaha!). Dei um abraço no homem suado (hahahaha!) que pensei que não veria mais, pois na minha cabeça ele não tinha gostado de mim. Quem diria que um encontro no shopping poderia trazer o amor da minha vida?</p>
+                    
+                    <p>Quero te dizer, meu amor, que sou muito grata pela vida que temos e por nossos momentos que são únicos. Cada dia ao seu lado é maravilhoso, cheia de risos, carinho e cumplicidade. Seu sorriso ilumina meus dias, e seu abraço é o meu lugar favorito no mundo.</p>
+                    
+                    <p>Eu te amo por toda a minha vida e além dela. Obrigada por querer fazer parte do caos da minha vida, por me aceitar como sou e por tornar cada momento mais especial com a sua presença.</p>
+                    
+                    <p>Feliz aniversário, meu amor! Que você continue sendo a minha pessoa, essa pessoa maravilhosa, cativante, de sorriso maroto e cabelo com "pega rapaiz" (ahhahahah!). Você é o meu parceiro de vida, meu confidente, meu melhor amigo e meu amor eterno.</p>
+                    
+                    <p>Que este novo ano de vida te traga ainda mais alegrias, realizações e momentos inesquecíveis. Estarei sempre ao seu lado, pronta para empurrar qualquer carro que a vida colocar em nosso caminho!</p>
+                    
+                    <div class="signature">
+                        Te amo para sempre e sempre,<br>
+                        Sarah Hassen.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="audio-player" onclick="toggleAudio()">
+        <i class="fas fa-music"></i>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="musica/happy-birthday-to-you-piano-version-13976.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Aniversário do Manoel. Todos os direitos reservados.</p>
+            <p>Feito com ❤️ por Sarah Hassen</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 0);
+        });
+
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        function toggleAudio() {
+            var audio = document.getElementById('background-music');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>
